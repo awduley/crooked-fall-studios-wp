@@ -1,0 +1,57 @@
+// Pagination section for blog and archive page
+.paginate-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2 / 3;
+  width: auto;
+  margin: 5rem auto;
+  text-transform: uppercase;
+}
+
+.prev.page-numbers,
+.next.page-numbers,
+.page-numbers.current,
+.page-numbers {
+  padding: 1rem 1.6rem;
+  @include transition-fast; 
+  
+    &:hover {
+      color: #fff;
+      background: $color-blue-2; 
+    }
+}
+
+.prev.page-numbers,
+.next.page-numbers {
+  width: 14rem;
+  position: relative;
+  text-align: center;
+}
+
+.prev.page-numbers {
+
+  &::before {
+    content: '\27AD';
+    position: absolute;
+    transform: scale(1.6) rotateY(180deg);
+    top: 25%;
+    left: 15%;
+  }
+}
+
+.next.page-numbers {
+  
+  &::after {
+    content: '\27AD';
+    position: absolute;
+    transform: scale(1.6);
+    top: 25%;
+    right: 15%;
+  }
+}
+
+.page-numbers.current {
+  background: $color-blue-4;
+  color: #fff;
+}

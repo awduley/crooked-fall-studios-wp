@@ -1,0 +1,15 @@
+a {
+	color: #fff;
+	text-decoration: none;
+	@include transition-fast;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-blue-1;
+	}
+
+	&:visited {
+		//color: $color-purple-3;
+	}
+}

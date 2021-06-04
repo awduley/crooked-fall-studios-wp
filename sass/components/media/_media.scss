@@ -1,0 +1,26 @@
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+.iframe {
+	position: relative;
+	padding: 3rem 0 56.25%;
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+	border: 1px solid $color-blue-4;
+	box-shadow: 0 10px 20px #000;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.wp-post-image {
+	//border-radius: 3px;
+}

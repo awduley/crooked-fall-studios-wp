@@ -1,0 +1,18 @@
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.site {
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/light-blue-background.jpg');
+  background-attachment: fixed;
+}
+
+.block {
+	border: 1px solid $color-blue-4;
+	margin: 3rem 0; 
+}

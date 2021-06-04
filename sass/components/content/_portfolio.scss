@@ -1,0 +1,444 @@
+.main-content__home {
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  font-family: "Sen", sans-serif;
+  position: relative;
+  padding: 1rem 0 0;
+  box-shadow: inset 0 0 20px 6px #000; 
+  overflow: hidden;
+  padding: 4rem 0 5rem;
+
+  &::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));
+  }
+}
+
+.bar {
+  position: relative;
+  font-size: 1.3rem;
+  margin: 3rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #8da1a9);
+    height: 1px;
+    width: 5.4rem;
+    left: -5.8rem;
+    bottom: 40%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #8da1a9);
+    height: 1px;
+    width: 5.4rem;
+    right: -5.8rem;
+    bottom: 40%;
+  }
+}
+
+// // Main nav section
+// .main-nav {
+//   display: flex;
+//   width: 100%;
+//   position: fixed;
+//   z-index: 500;
+// }
+
+// .main-nav__area {
+//   font-family: "Oxanium", cursive;
+//   margin: auto;
+// }
+
+// .main-nav__links {
+//   display: flex;
+//   margin: 0 1.1rem 1.1rem;
+// }
+
+// .main-nav__link {
+//   margin: 0 1rem;
+//   list-style: none;
+//   z-index: 2;
+
+//   a {
+//     text-decoration: none;
+//     font-size: 0.9rem;
+//     color: #e1c29e;
+//     transition: all 200ms ease;
+
+//     &:hover {
+//       color: #fff6ec;
+//     }
+//   }
+// }
+
+// Portrait section
+.portrait {
+  width: 100%;
+  margin: 0 0 0.6rem;
+
+  img {
+    width: 84%;
+    max-width: 28rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    border: .125rem solid #9c7244;
+    box-shadow: 0 0 20px #000;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+// Contact section
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0;
+
+  h3 {
+    margin-bottom: 1rem;
+    z-index: 2;
+    color: #9c7244;
+    text-shadow: 0 0 2px #000;
+  }
+}
+
+.contact-section__contact-info {
+  max-width: 28rem;
+  width: 84%;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-section__box {
+  padding: .8rem 0.6rem;
+  outline: 3px solid rgba(255, 255, 255, 0.2);
+  margin: 1rem 0 1.3rem;
+  cursor: pointer;
+  transition: all 400ms;
+  transform: scale(1);
+  color: #fff;
+
+  a {
+    text-decoration: none;
+    border-bottom: none;
+    transition: all 400ms;
+    color: #fff;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+    background: rgba(255, 255, 255, 0.8);
+
+    a {
+      color: #111f25;
+    }
+  }
+}
+
+.contact-section__box--box1 {
+  &:hover {
+    color: #111f25;
+  }
+}
+
+.contact-section__box--box3 {
+  &:hover {
+    color: #111f25;
+  }
+}
+
+// About section
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  margin: -1rem auto 1rem;
+  padding: 1.4rem;
+  color: #fff;
+
+  h3 {
+    margin-bottom: 1.2rem;
+    z-index: 2;
+    color: #9c7244;
+    text-shadow: 0 0 2px #000;
+  }
+}
+.about-section__about-info {
+  max-width: 26rem;
+  width: 100%;
+  line-height: 2.4rem;
+  z-index: 2;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Projects section
+#projects-section {
+  position: relative;
+  width: 100%;
+  padding: 1.85rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: 1rem;
+    z-index: 2;
+    color: #9c7244;
+    text-shadow: 0 0 2px #000;
+  }
+}
+
+.project-section__project {
+  max-width: 28rem;
+  width: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .5%;
+  border: 1px solid rgba(255, 255, 255, .4);
+  padding: .8rem;
+  margin: 1rem 0;
+  background: rgba(0, 0, 0, .4);
+}
+
+.project-section__info {
+  width: 100%;
+  line-height: 2.2rem;
+  z-index: 2;
+
+  h3 {
+    text-align: center;
+    margin: .4rem 0 1rem;
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin: 1rem 0.6rem 2.4rem;
+    color: #fff;
+  }
+}
+
+.project-section__btns {
+  display: flex;
+  justify-content: space-around;
+  width: 94%;
+}
+
+.project-section__btn {
+  margin: .6rem 0;
+  padding: .6rem;
+  border-radius: 1%;
+  transition: all 400ms ease;
+  transform: scale(1.1);
+  cursor: pointer;
+  text-align: center;
+  
+  a {
+    transition: all 400ms ease;
+    text-decoration: none;
+    margin: .3rem;
+    color: #000;
+  }
+}
+
+.project-section__btn--btn1 {
+  background: #be976b;
+
+  &:hover {
+    background: #9c7244;
+    color: #ccc;
+
+    a {
+      color: #ccc;
+    }
+  }
+}
+
+.project-section__btn--btn2 {
+  background: #8da1a9;
+
+  &:hover {
+    background: #2d5262;
+    color: #ccc;
+
+    a {
+      color: #ccc;
+    }
+  }
+}
+
+.project-section__img {
+  width: 100%;
+
+  img {
+    //border: 1px solid rgba(255, 255, 255, .4);
+    width: 88%;
+    display: block;
+    margin: .8rem auto;
+  }
+}
+
+// Footer section 
+.footer-section__footer-info {
+  text-align: center;
+  padding: .6rem 0 1rem;
+  color: #fff;
+  position: relative;
+}
+
+$primary-color: #66828e;
+$secondary-color: #fff6ec;
+$dark-color: #232425;
+
+// @mixin transition {
+//   transition: all 400ms ease-out;
+// }
+
+// Media query mixins
+@mixin xs {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Cell phones portrait
+@include xs {
+
+  .project-section__btns {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+// Cell phones landscape
+@include sm {
+
+}
+
+// Tablets and small laptops
+@include md {
+
+}
+
+// Desktops and televisions
+@include lg {
+  
+  .large-layout {
+    display: grid;
+  }
+
+  .portrait { 
+    margin: 0;
+    grid-column: 1 / 2;
+  }
+
+  .contact-section {
+    margin: 0;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .about-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+  }
+
+  #projects-section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+    grid-gap: 1rem;
+    width: 100%;
+    //max-width: 30rem;
+
+    h3 {
+      z-index: 2;
+      color: #9c7244;
+      text-shadow: 0 0 2px #000;
+      grid-column: 1 / 4;
+    }
+  }
+
+  .project-section__btns {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+// Extra large monitors
+@include xl {
+
+  .project-section__btns {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .project-section__btn {
+    margin: .6rem .8rem;
+  }
+}

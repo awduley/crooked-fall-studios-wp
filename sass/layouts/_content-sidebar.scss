@@ -1,0 +1,17 @@
+// Site main for posts and pages
+.site-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	padding: 1rem;
+}
+
+.primary-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}

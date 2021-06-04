@@ -1,0 +1,34 @@
+.site-header {
+  background: radial-gradient($color-blue-1, $color-blue-4);
+  padding: 1rem;
+  font-family: 'Oxanium', cursive;  
+  box-shadow: 0 .6rem 1rem #000;
+  position: relative;
+}
+
+.primary-site-header {
+
+}
+
+.main-navigation {
+
+}
+
+.menu-main-menu-container {
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 3rem;
+
+  li {
+    margin: .6rem 1rem;
+
+    a {
+      @include transition-fast;
+    }
+  }
+}

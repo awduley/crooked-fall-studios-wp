@@ -1,0 +1,30 @@
+.btn {
+	padding: .6rem 1.6rem;
+	border-radius: 3px;
+	background: $color-blue-3;
+	box-shadow: 0 0 2px #000;
+	@include transition-fast;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+
+	&:hover {
+		background: $color-blue-4;
+	}
+
+	&__blue {
+		background: $color-blue-1;
+	}
+
+	&__purple {
+		background: #800080;
+	}
+
+	&__red {
+		background: #ff0000;
+	}
+
+	&__green {
+		background: #00ff00;
+	}
+}
