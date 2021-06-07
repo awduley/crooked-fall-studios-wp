@@ -28,10 +28,20 @@
 
 		<div class="site-branding">
 			<div class="custom-logo-container">
-				<?php the_custom_logo(); ?>
+				<?php 
+				if ( has_custom_logo() ) :
+				the_custom_logo();
+
+				else:
+				?>
+					<div class="cfs-logo-container">
+						<h1 class="cfs-logo"><span class="letter c">C</span>rooked <span class="letter f">F</span>all Studios</h1>
+					</div>
+				<?php endif; ?>
 			</div>
 		</div><!-- .site-branding -->
 
+		<!-- Main navigation container -->
 		<nav id="site-navigation" class="main-navigation">
 			
 			<?php
@@ -42,6 +52,27 @@
 					)
 				);
 			?>
+		</nav>
+
+		<!-- Sandwich button container -->
+		<div class="hamburger-button">
+			<div class="line line-1"></div>
+			<div class="line line-2"></div>
+			<div class="line line-3"></div>
+		</div>
+			
+		<!-- Mobile menu navigation container -->
+		<nav id="site-navigation" class="main-navigation__mobile">
+			
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-primary',
+						'menu_id'        => 'menu-primary',
+					)
+				);
+			?>
+		</nav>
 
 		</nav><!-- .main-navigation -->
 	</header><!-- #masthead -->

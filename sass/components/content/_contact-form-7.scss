@@ -1,0 +1,69 @@
+.wpcf7 {
+  margin: 3rem auto;;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, .3), rgba($color-blue-4, .6)), url('./img/contact-bg-brushed.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 3px;  
+  max-width: 60rem;
+  border: 1px solid $color-blue-4;
+  box-shadow: inset 0 0 .8rem 2px #000;
+
+  p {
+    margin: 1.6rem 0 .6rem;
+    color: #fff; 
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  overflow: hidden;
+
+  input,
+  .wpcf7-form-control {
+    padding: .6rem 1rem;
+    border: none;
+    color: $color-gray-medium;
+    margin: .6rem 0;
+    width: 100%;
+
+    &:focus {
+      box-shadow: inset 0 0 .6rem 0px #000;
+      outline: none;
+    }
+  }
+}
+
+.wpcf7-form-control {
+  
+  min-width: 28rem;
+  
+  textarea {
+
+  }
+}
+
+.wpcf7-submit {
+  padding: .8rem 2rem;
+  background: $color-blue-4;
+  border-radius: 3px;
+  display: inline;
+  border: none;
+  @include transition-fast;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.6rem;
+  min-width: auto;
+  margin: 0 0 1rem;
+  box-shadow: 0 .4rem .6rem #000;
+
+  &:hover {
+    background: $color-blue-1;
+    box-shadow: 0 .6rem .4rem #000;
+  }
+}
+
+.wpcf7-response-output {
+  color: #fff;
+
+}

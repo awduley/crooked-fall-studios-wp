@@ -1,0 +1,53 @@
+.no-results {
+  
+  .page-title { 
+    color: lighten($color-blue-1, 20); 
+    text-align: center;
+  } 
+} 
+
+.rand-suggestions {
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url('./img/rand-suggestions-bg.jpg') center center no-repeat;
+  background-size: cover;
+  border: 1px solid $color-blue-3; 
+  padding: 0 1rem;
+  border-radius: 1rem;
+  margin: 0 0 5rem;
+  
+  &__heading {
+    text-align: center;
+    font-size: 2.2rem;
+    color: lighten($color-blue-1, 20);
+  }
+}
+
+.additional-suggestions {
+  text-align: center;
+}
+
+.rand-posts__heading,
+.rand-music-posts__heading,
+.rand-animation-posts__heading {
+  color: #fff;
+  width: 90%;
+  max-width: 50rem;
+  text-align: center;
+  margin: .8rem auto 1.8rem;
+}
+
+.rand-block {
+  // background: linear-gradient(to bottom right,rgba(0, 0, 0, .8) 30%, rgba($color-purple-0, .6));
+  padding: 1rem;
+  margin: 1rem 0 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-blue-2;
+  border-bottom: 1px solid $color-blue-2;
+
+  li {
+    margin: 0 2rem;
+    word-break: none;
+  }
+}

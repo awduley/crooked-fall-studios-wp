@@ -1,17 +1,183 @@
 .site-header {
-  background: radial-gradient($color-blue-1, $color-blue-4);
-  padding: 1rem;
-  font-family: 'Oxanium', cursive;  
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./img/header-bg-eye-color.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 1rem; 
   box-shadow: 0 .6rem 1rem #000;
   position: relative;
-}
+  font-family: 'xoloniumbold';
+} 
 
 .primary-site-header {
 
 }
 
-.main-navigation {
+.cfs-logo-container {
 
+}
+
+.cfs-logo {
+  text-align: center;
+  color: $color-blue-4;
+  font-size: 4rem;
+  text-shadow: 0 0 5px #fff;
+
+  .c {
+    animation: c-blink 7s cubic-bezier(.01, .95, .01, .95) infinite 2s;
+
+    @keyframes c-blink {
+      0% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+      
+      18% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      19% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-blue-1, 20);
+        
+      }
+
+      24% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+      
+      44% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      45% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-blue-1, 20);
+      }
+
+      47% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      48% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-blue-1, 20);
+      }
+
+      82% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-blue-1, 20);
+      }
+
+      94% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      100% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+    }
+  }
+
+  .f {
+    animation: f-blink 8s cubic-bezier(.01, .99, .01, .99) infinite 1.4s;
+
+    @keyframes f-blink {
+      0% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+      
+      16% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      17% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      19% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+      
+      36% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      37% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      39% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      40% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      41% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      43% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      50% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      51% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      53% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      54% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      81% {
+        text-shadow: 0 0 1.6rem #fff;
+        color: lighten($color-purple-1, 20);
+      }
+
+      96% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+
+      100% {
+        text-shadow: 0 0 5px #fff;
+        color: $color-blue-4;
+      }
+    }
+  }
+}
+
+// Main menu styles
+.main-navigation {
+  display: none; 
 }
 
 .menu-main-menu-container {
@@ -20,15 +186,94 @@
 
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin: 0 3rem;
 
   li {
     margin: .6rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
 
     a {
       @include transition-fast;
     }
   }
 }
+
+// Hamburger button styles
+.hamburger-button {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    
+    .line {
+      background: lighten($color-blue-1, 20);
+    }
+  }
+}
+
+.line {
+  width: 3.8rem;
+  height: 4px;
+  background: $color-blue-1;
+  margin: .4rem 0;
+  @include transition-medium;
+}
+
+.line-1-click,
+.line-2-click,
+.line-3-click {
+  background: $color-purple-1;
+}
+
+.line-1-click {
+  transform: rotate(135deg) translate(0, -10px);
+}
+
+.line-2-click {
+  transform: scale(0);
+  
+}
+
+.line-3-click {
+  transform: rotate(-135deg) translate(0, 11px);
+}
+
+// Main mobile menu styles
+.main-navigation__mobile {
+  position: fixed;
+  top: 0; 
+  right: -50%;
+
+  .mobile-show {
+    right: -6%;
+  }
+
+  .menu-main-menu-container {
+  
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;;
+    margin: 0 3rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid $color-purple-1;
+  
+    li {
+      margin: .6rem 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+  
+      a {
+        @include transition-fast;
+      }
+    }
+  }
+}
+

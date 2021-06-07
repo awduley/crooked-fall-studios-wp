@@ -183,7 +183,7 @@ function crooked_fall_studios_scripts() {
 
 	wp_enqueue_script( 'font-awesome', 'https://kit.fontawesome.com/a38893edb6.js', [], '5.15.3', true );
 
-	// wp_enqueue_script( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap', [], '1.0.0', true );
+	wp_enqueue_script( 'custom-navigation', get_template_directory_uri() . '/js/custom-navigation.js', [], '1.0.0', true );
 
 	wp_enqueue_script( 'vanilla-tilt', get_template_directory_uri() . '/js/vanilla-tilt.js', [], '1.0.0', true );
 
@@ -278,20 +278,12 @@ function crooked_fall_studios_number_pagination() {
     );
 }
 
-// add_filter( 'get_the_archive_title', function( $title) {
-// 	$categoryTitle = single_cat_title();
-// 	if( is_category() ) {
-// 		$title = 'You are viewing entries from the ' . $categoryTitle . ' category.';
-// 	}
-// 	return $title;
-// });
-
 // Return an alternate title, without prefix, for every type used in the get_the_archive_title().
 add_filter('get_the_archive_title', function ($title) {
 	if ( is_category() ) {
 			$title = single_cat_title( 'You are viewing entries with a category of - ', false, );
 	} elseif ( is_tag() ) {
-			$title = single_tag_title( 'You are viewing entries that contain the tag -', false );
+			$title = single_tag_title( 'You are viewing entries that contain the tag - ', false );
 	} elseif ( is_author() ) {
 			$title = '<span class="vcard">' . get_the_author() . '</span>';
 	} elseif ( is_year() ) {
