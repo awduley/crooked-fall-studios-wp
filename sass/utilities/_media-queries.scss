@@ -3,8 +3,43 @@
   
 }
 
+// Custom mobile menu break point {
+  @media ( min-width: 400px) {
+
+    .main-navigation__mobile {
+      
+      &.mobile-show {
+        right: -7%;
+      }
+    }
+  }
+
 // Smart phones landscape mode
 @media (min-width: 576px) {
+
+  .hamburger-button {
+    top: 36%;
+    left: 4%;
+    transform: scale(1);
+  }
+
+  .cfs-logo {
+    font-size: 3.2rem;
+  }
+
+  .main-navigation__mobile {
+      
+    &.mobile-show {
+      right: -5%;
+    }
+  }
+
+  .music__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 
   .newest-posts {
   
@@ -56,6 +91,10 @@
 
 // Tablets and small laptops
 @media (min-width: 768px) {
+
+  .cfs-logo {
+    font-size: 4rem;
+  }
 
   .archive-primary-content {
     display: grid;

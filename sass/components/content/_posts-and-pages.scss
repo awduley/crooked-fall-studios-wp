@@ -1,4 +1,56 @@
 // Front page styles
+.music-primary-content {
+ 
+}
+
+.music__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music__title {
+  color: lighten($color-purple-1, 20);
+}
+
+.music__post {
+  margin: 2rem 0;
+  position: relative;
+  width: 90%;
+  height: auto;
+  @include transition-medium;
+  transform: scale(1);
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    height: 5.4rem;
+    background: rgba(0, 0, 0, .6);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.music__img {
+  
+}
+
+.music__post-title {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+// Newest posts styles
 .newest-posts {
 	width: 100%;
   background: rgba(0, 0, 0, .6);
@@ -12,9 +64,7 @@
   }
 
   &__title {
-    background-image: radial-gradient(#fff, $color-blue-1);
-    -webkit-background-clip: text;
-    color: transparent; 
+    color: $color-blue-1; 
   }
 	
 
@@ -67,9 +117,7 @@
   }
 
   &__title {
-    background: radial-gradient(#fff, $color-purple-0);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-purple-1;
   }
 
   &__playlists {
@@ -104,12 +152,28 @@
   line-height: 2rem;
 }
 
+.page {
+
+  .entry-title {
+    margin: 1rem 0;
+  }
+}
+
 .page-header {
 
 }
 
 .page-title {
   
+}
+
+.cfs_music,
+.cfs_3d_animation {
+  
+  .entry-title {
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem;
+  }
 }
 
 .entry-header {

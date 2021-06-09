@@ -14,7 +14,167 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<div class="primary-content">
+		<div class="primary-content music-primary-content">
+
+			<section class="music">
+			<h2 class="music__title align-center"><?php _e( 'Music Section', 'crooked-fall-studios' ) ?></h2>
+				<div class="music__container">
+
+					<?php 
+				
+				 	// Getting the guitar subcategory of music
+					$idObj1 = get_category_by_slug( 'guitar' ); 
+					$musicArgsGuitar = array(
+							'post_type' => 'cfs_music',
+							'category_name' => 'music',
+							'category__in' => array( 
+								$idObj1->term_id,
+								
+							 ), // Take only IDs of the categories
+							'posts_per_page' => '1',
+					);
+
+					$musicGuitar = new WP_Query( $musicArgsGuitar );
+
+						if ( $musicGuitar->have_posts() ) :
+							while ( $musicGuitar->have_posts() ) :
+								$musicGuitar->the_post();
+
+					?>
+
+					<div class="music__post">
+
+						<div class="music__img-cat">
+							<a href="<?php the_permalink(); ?>">
+								<div class="music__img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</a>
+							<a href="<?php the_permalink(); ?>"><h3 class="music__post-title align-center"><?php echo get_cat_name( '14' ); ?></h3><!-- .music__posts-title -->
+							</a>
+						</div>
+
+					</div><!-- music__post -->
+
+					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endif; ?>
+
+					<?php
+
+					// Getting the drum subcategory of music
+					$idObj2 = get_category_by_slug( 'drums' ); 
+					$musicArgsDrums = array(
+						'post_type' => 'cfs_music',
+						'category_name' => 'music',
+						'category__in' => array( 
+							$idObj2->term_id,
+					
+							), // Take only IDs of the categories
+						'posts_per_page' => '1',
+					);
+
+					$musicDrums = new WP_Query( $musicArgsDrums );
+
+						if ( $musicDrums->have_posts() ) :
+							while ( $musicDrums->have_posts() ) :
+								$musicDrums->the_post();
+					?>
+
+					<div class="music__post">
+
+						<div class="music__img-cat">
+							<a href="<?php the_permalink(); ?>">
+								<div class="music__img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</a>
+							<a href="<?php the_permalink(); ?>"><h3 class="music__post-title align-center"><?php echo get_cat_name( '18' ); ?></h3><!-- .music__posts-title -->
+							</a>
+						</div>
+
+					</div><!-- music__post -->
+
+					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endif; ?>
+
+					<?php
+
+					// Getting the Reaper subcategory of music
+					$idObj3 = get_category_by_slug( 'reaper' ); 
+					$musicArgsReaper = array(
+						'post_type' => 'cfs_music',
+						'category_name' => 'music',
+						'category__in' => array( 
+							$idObj3->term_id,
+					
+							), // Take only IDs of the categories
+						'posts_per_page' => '1',
+					);
+
+					$musicReaper = new WP_Query( $musicArgsReaper );
+
+						if ( $musicReaper->have_posts() ) :
+							while ( $musicReaper->have_posts() ) :
+								$musicReaper->the_post();
+					?>
+
+					<div class="music__post">
+
+						<div class="music__img-cat">
+							<a href="<?php the_permalink(); ?>">
+								<div class="music__img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</a>
+							<a href="<?php the_permalink(); ?>"><h3 class="music__post-title align-center"><?php echo get_cat_name( '19' ); ?></h3><!-- .music__posts-title -->
+							</a>
+						</div>
+
+					</div><!-- music__post -->
+
+					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endif; ?>
+
+					<?php
+
+					// Getting the My Music subcategory of music
+					$idObj4 = get_category_by_slug( 'my-music' ); 
+					$musicArgsMyMusic = array(
+						'post_type' => 'cfs_music',
+						'category_name' => 'music',
+						'category__in' => array( 
+							$idObj4->term_id,
+					
+							), // Take only IDs of the categories
+						'posts_per_page' => '1',
+					);
+
+					$musicMyMusic = new WP_Query( $musicArgsReaper );
+
+						if ( $musicMyMusic->have_posts() ) :
+							while ( $musicMyMusic->have_posts() ) :
+								$musicMyMusic->the_post();
+					?>
+
+					<div class="music__post">
+
+						<div class="music__img-cat">
+							<a href="<?php the_permalink(); ?>">
+								<div class="music__img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</a>
+							<a href="<?php the_permalink(); ?>"><h3 class="music__post-title align-center"><?php echo get_cat_name( '20' ); ?></h3><!-- .music__posts-title -->
+							</a>
+						</div>
+
+					</div><!-- music__post -->
+
+					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endif; ?>
+
+				</div>
+			</section><!-- .music -->
 
 			<section class="newest-posts block">
 				<div class="newest-posts__container">

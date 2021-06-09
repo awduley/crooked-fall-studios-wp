@@ -35,6 +35,12 @@
 				else:
 				?>
 					<div class="cfs-logo-container">
+						<!-- Sandwich button container -->
+						<div class="hamburger-button">
+							<div class="line line-1"></div>
+							<div class="line line-2"></div>
+							<div class="line line-3"></div>
+						</div>
 						<h1 class="cfs-logo"><span class="letter c">C</span>rooked <span class="letter f">F</span>all Studios</h1>
 					</div>
 				<?php endif; ?>
@@ -53,13 +59,6 @@
 				);
 			?>
 		</nav>
-
-		<!-- Sandwich button container -->
-		<div class="hamburger-button">
-			<div class="line line-1"></div>
-			<div class="line line-2"></div>
-			<div class="line line-3"></div>
-		</div>
 			
 		<!-- Mobile menu navigation container -->
 		<nav id="site-navigation" class="main-navigation__mobile">

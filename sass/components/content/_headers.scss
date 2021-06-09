@@ -1,10 +1,15 @@
 .site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./img/header-bg-eye-color.jpg') center center no-repeat;
   background-size: cover;
   padding: 1rem; 
   box-shadow: 0 .6rem 1rem #000;
   position: relative;
   font-family: 'xoloniumbold';
+  position: relative;
 } 
 
 .primary-site-header {
@@ -12,7 +17,7 @@
 }
 
 .cfs-logo-container {
-
+  
 }
 
 .cfs-logo {
@@ -20,6 +25,7 @@
   color: $color-blue-4;
   font-size: 4rem;
   text-shadow: 0 0 5px #fff;
+  font-size: 3rem;
 
   .c {
     animation: c-blink 7s cubic-bezier(.01, .95, .01, .95) infinite 2s;
@@ -174,106 +180,3 @@
     }
   }
 }
-
-// Main menu styles
-.main-navigation {
-  display: none; 
-}
-
-.menu-main-menu-container {
-  
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3rem;
-
-  li {
-    margin: .6rem 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-
-    a {
-      @include transition-fast;
-    }
-  }
-}
-
-// Hamburger button styles
-.hamburger-button {
-  display: inline-block;
-  cursor: pointer;
-
-  &:hover {
-    
-    .line {
-      background: lighten($color-blue-1, 20);
-    }
-  }
-}
-
-.line {
-  width: 3.8rem;
-  height: 4px;
-  background: $color-blue-1;
-  margin: .4rem 0;
-  @include transition-medium;
-}
-
-.line-1-click,
-.line-2-click,
-.line-3-click {
-  background: $color-purple-1;
-}
-
-.line-1-click {
-  transform: rotate(135deg) translate(0, -10px);
-}
-
-.line-2-click {
-  transform: scale(0);
-  
-}
-
-.line-3-click {
-  transform: rotate(-135deg) translate(0, 11px);
-}
-
-// Main mobile menu styles
-.main-navigation__mobile {
-  position: fixed;
-  top: 0; 
-  right: -50%;
-
-  .mobile-show {
-    right: -6%;
-  }
-
-  .menu-main-menu-container {
-  
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;;
-    margin: 0 3rem;
-    padding: 1rem;
-    background: rgba(0, 0, 0, .6);
-    border: 1px solid $color-purple-1;
-  
-    li {
-      margin: .6rem 1rem;
-      text-align: center;
-      font-size: 1.5rem;
-  
-      a {
-        @include transition-fast;
-      }
-    }
-  }
-}
-
