@@ -1860,6 +1860,18 @@ a:hover, a:focus, a:active {
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0 1rem;
+	width: 100%;
+}
+
+.sidebar-1 .widget ul li:first-child {
+	border-top: 1px solid gray;
+}
+
+.sidebar-1 .widget ul li {
+	border-bottom: 1px solid gray;
+	width: 100%;
+	display: inline-block;
+	padding: .8rem 0;
 }
 
 .sidebar-2-container {
