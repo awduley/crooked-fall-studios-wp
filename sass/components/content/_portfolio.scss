@@ -313,6 +313,19 @@
   }
 }
 
+.credentials {
+	margin: 0 auto;
+}
+
+.certificate {
+	transition: all .4s ease-out;
+	transform: scale(.8);
+}
+
+.certificate:hover {
+	transform: scale(1);
+}  
+
 // Footer section 
 .footer-section__footer-info {
   text-align: center;

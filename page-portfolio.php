@@ -324,6 +324,19 @@ get_header()
       </section>
       <!-- End Projects Section -->
 
+      <!-- Credentials Section -->
+      <section class="credentials">
+        <div class="certificates">
+          <div class="certificate certificate-1">
+            <img src="<?php echo get_template_directory_uri() . '/img/fcc-front-end-cert.jpg'; ?>" alt="Free Code Camp front end developer certificate"> 
+          </div>
+        </div>
+        <div class="resume">
+
+        </div>
+      </section>
+      <!-- credentials -->
+
       </div>
       <!-- End Div For Large Wrapper -->
 

@@ -1,0 +1,23 @@
+.error-404 {
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .custom-search-form {
+    width: 100%;
+  }
+
+  .widgettitle,
+  .widget-title {
+    color: lighten($color-blue-1, 20);
+  }
+}

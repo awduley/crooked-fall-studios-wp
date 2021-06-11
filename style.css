@@ -419,6 +419,7 @@ body {
 .site {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/light-blue-background.jpg");
 	background-attachment: fixed;
+	box-shadow: inset 0 0 2rem 2px #000;
 }
 
 .block {
@@ -607,6 +608,7 @@ a:hover, a:focus, a:active {
 	top: 0;
 	right: -100%;
 	transition: all .2s ease-out;
+	z-index: 10;
 }
 
 .main-navigation__mobile.mobile-show {
@@ -852,11 +854,35 @@ a:hover, a:focus, a:active {
 	background-attachment: fixed;
 	height: auto;
 	padding: 1rem 1rem 2rem;
+	box-shadow: 0 -.4rem 2rem 2px #000;
 }
 
 .site-info {
 	text-align: center;
 	color: #fff;
+}
+
+/* 404
+--------------------------------------------- */
+.error-404 .page-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8rem;
+}
+
+.error-404 .page-content p {
+	text-align: center;
+}
+
+.error-404 .custom-search-form {
+	width: 100%;
+}
+
+.error-404 .widgettitle,
+.error-404 .widget-title {
+	color: #41a3ce;
 }
 
 /* Portfolio
@@ -1132,6 +1158,19 @@ a:hover, a:focus, a:active {
 	margin: .8rem auto;
 }
 
+.credentials {
+	margin: 0 auto;
+}
+
+.certificate {
+	transition: all .4s ease-out;
+	transform: scale(0.8);
+}
+
+.certificate:hover {
+	transform: scale(1);
+}
+
 .footer-section__footer-info {
 	text-align: center;
 	padding: .6rem 0 1rem;
@@ -1366,6 +1405,10 @@ a:hover, a:focus, a:active {
 	width: 100%;
 }
 
+.entry-meta .updated {
+	display: none;
+}
+
 .entry-button {
 	margin: 3rem 0;
 }
@@ -1435,7 +1478,7 @@ a:hover, a:focus, a:active {
 	min-width: 20rem;
 	width: auto;
 	color: #fff;
-	padding: .8rem 2rem;
+	padding: 1rem 5rem;
 	border: none;
 	border-radius: 3px;
 	margin: .6rem 0;
@@ -1633,7 +1676,7 @@ a:hover, a:focus, a:active {
 }
 
 .comments-title {
-	color: #236886;
+	color: #41a3ce;
 }
 
 .comment-list {

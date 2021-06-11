@@ -11,30 +11,4 @@ hamburgerButton.addEventListener('click', () => {
   line2.classList.toggle('line-2-click');
   line3.classList.toggle('line-3-click');
   mainNavigationMobile.classList.toggle('mobile-show');
-})
-
-
-// .main-navigation {
-  
-// }
-
-// .menu-main-menu-container {
-  
-// }
-
-// .menu {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 0 3rem;
-
-//   li {
-//     margin: .6rem 1rem;
-//     text-align: center;
-//     font-size: 1.5rem;
-
-//     a {
-//       @include transition-fast;
-//     }
-//   }
-// }
+});

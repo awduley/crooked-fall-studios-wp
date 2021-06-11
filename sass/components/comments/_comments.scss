@@ -6,7 +6,7 @@
 }
 
 .comments-title {
-  color: $color-blue-1;
+  color: lighten($color-blue-1, 20);
 }
 
 .comment-list {

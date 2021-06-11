@@ -25,7 +25,7 @@
 		<div class="entry-meta">
 			<p>
 				<?php
-				crooked_fall_studios_posted_on(); esc_html_e( '&nbsp;', 'crooked-fall-studios' );
+				 crooked_fall_studios_posted_on(); esc_html_e( '&nbsp;', 'crooked-fall-studios' );
 				crooked_fall_studios_posted_by();
 				?>
 			</p>

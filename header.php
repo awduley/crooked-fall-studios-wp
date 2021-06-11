@@ -41,7 +41,7 @@
 							<div class="line line-2"></div>
 							<div class="line line-3"></div>
 						</div>
-						<h1 class="cfs-logo"><span class="letter c">C</span>rooked <span class="letter f">F</span>all Studios</h1>
+						<a href="<?php echo get_home_url(); ?>"><h1 class="cfs-logo"><span class="letter c">C</span>rooked <span class="letter f">F</span>all Studios</h1></a>
 					</div>
 				<?php endif; ?>
 			</div>
