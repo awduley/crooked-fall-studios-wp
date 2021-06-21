@@ -7,6 +7,7 @@
 
 .comments-title {
   color: lighten($color-blue-1, 20);
+  text-align: center;
 }
 
 .comment-list {
@@ -19,6 +20,10 @@
   padding: 2rem 1rem;
   border-radius: 1rem;
   margin: 3rem 0; 
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .children {
@@ -29,10 +34,6 @@
     border: none;
     border-top: 1px solid $color-blue-1;
     border-radius: 0;
-
-    :nth-last-child() {
-      margin: 0;
-    } 
   }
 }
 

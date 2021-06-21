@@ -21,7 +21,7 @@
 		</div>
 		<div class="site-info">
 			<small>
-				<a href="<?php esc_url( '/' ) ?>"><?php esc_html_e( 'Crooked Fall Studios' ); ?></a> <?php esc_html_e( '&#124; ' ) . esc_html_e( 'All rights reserved ' ) . esc_html_e('2018 &#8208; ') . the_date( 'Y' ); ?>
+				<a href="<?php echo get_home_url(); ?>"><?php esc_html_e( 'Crooked Fall Studios' ); ?></a> <?php echo esc_html_e( '&#124; ' ) . esc_html_e( 'All rights reserved ' ) . esc_html_e('2018 &#8208; ') . date( 'Y' ); ?>
 			</small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

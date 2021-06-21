@@ -10,19 +10,6 @@ get_header()
     <!-- Start Main Section -->
     <main class="main-content__home">
 
-      <!-- Start Main Navbar -->
-      <!-- <nav class="main-nav">
-        <div class="main-nav__area">
-          <ul class="main-nav__links">
-            <li class="main-nav__link"><a href="#projects-section">Projects</a></li>
-            <li class="main-nav__link"><a href="#">About</a></li>
-            <li class="main-nav__link">
-              <a href="https://github.com/awduley" target="_blank">GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
-      <!-- End Main Navbar -->
 
     <!-- Start Div For Portrait, Contact, And About Me Sections -->
     <div class="large-layout">
@@ -37,7 +24,7 @@ get_header()
 
       <!-- Start Contact Section -->
       <section class="contact-section">
-        <h3 class="bar"><?php _e( 'Contact Me', 'crooked-fall-studios' ) ?></h3>
+        <h3 class="bar section-heading"><?php _e( 'Contact Me', 'crooked-fall-studios' ) ?></h3>
         <div class="contact-section__contact-info">
           <div class="contact-section__box contact-section__box--box1">
             <?php esc_html_e( 'Email: andrew@crookedfallstudios.com', 'crooked-fall-studios' ); ?>
@@ -60,10 +47,10 @@ get_header()
 
       <!-- Start About Section -->
       <section class="about-section">
-        <h3 class="bar"><?php _e( 'About Me', 'crooked-fall-studios' ); ?></h3>
+        <h3 class="bar section-heading"><?php _e( 'About Me', 'crooked-fall-studios' ); ?></h3>
         <div class="about-section__about-info">
           <p>
-            <?php esc_html_e( 'Hi, my name is Andrew Duley and I\'m a front end web developer. I currently work with HTML5, CSS3 (including the grid and flex systems), SCSS, WordPress, Javascript, Bootstrap, and React.', 'crooked-fall-studios' ); ?>
+            <?php esc_html_e( 'Hi, my name is Andrew Duley and I\'m a front end web developer. I currently work with HTML5, CSS3 (including the grid and flex systems), SCSS, WordPress, Javascript, Bootstrap, React.', 'crooked-fall-studios' ); ?>
           </p>
           <br />
           <p>
@@ -71,7 +58,7 @@ get_header()
           </p>
           <br />
           <p>
-            <?php _e( 'At the end of the day, learning is what I ultimately enjoy; and web development offers an environment that allows me to continuously push myself to learn new things', 'crooked-fall-studios' ); ?>
+            <?php _e( 'At the end of the day, learning is what I ultimately enjoy; and web development offers an environment that allows me to continuously push myself to learn new things', 'crooked-fall-studios.' ); ?>
           </p>
           <br />
           <p>
@@ -89,7 +76,7 @@ get_header()
 
       <!-- Start Projects Section -->
       <section id="projects-section">
-        <h3 class="bar"><?php _e( 'My Projects', 'crooked-fall-studios' ); ?></h3>
+        <h3 class="bar section-heading"><?php _e( 'My Projects', 'crooked-fall-studios' ); ?></h3>
         <!-- Project 1 -->
         <div
           class="project-section__project project-section__project--project-1">
@@ -106,7 +93,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn1">
               <i class="fab fa-github-square"></i
               ><a
-                href="<?php esc_url( 'https://github.com/awduley/adventure-alaska', 'crooked-fall-studios' ); ?>"
+                href="<?php echo esc_url( 'https://github.com/awduley/adventure-alaska', 'crooked-fall-studios' ); ?>"
                 target="_blank"
                 ><?php _e( 'GitHub code', 'crooked-fall-studios' ); ?></a
               >
@@ -114,7 +101,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn2">
               <i class="fas fa-link"></i
               ><a
-                href="<?php esc_url( 'https://www.crookedfallstudios.com/dist-adventure-alaska/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
+                href="<?php echo esc_url( 'https://www.crookedfallstudios.com/dist-adventure-alaska/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
                 ><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a
               >
             </div>
@@ -147,7 +134,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn1">
               <i class="fab fa-github-square"></i
               ><a
-                href="<?php esc_url( 'https://github.com/awduley/background-generator', 'crooked-fall-studios' ); ?>"
+                href="<?php echo esc_url( 'https://github.com/awduley/background-generator', 'crooked-fall-studios' ); ?>"
                 target="_blank"
                 ><?php _e( 'GitHub code', 'crooked-fall-studios' ); ?></a
               >
@@ -155,7 +142,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn2">
               <i class="fas fa-link"></i
               ><a
-                href="<?php esc_url( 'https://www.crookedfallstudios.com/dist-background-generator/index.html', 'crooked-fall-studios' ); ?>"
+                href="<?php echo esc_url( 'https://www.crookedfallstudios.com/dist-background-generator/index.html', 'crooked-fall-studios' ); ?>"
                 target="_blank"
                 ><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a
               >
@@ -189,7 +176,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn2">
               <i class="fas fa-link"></i
               ><a
-                href="<?php esc_url( 'https://crookedfallstudios.com/dist-heaths-tire-and-lube', 'crooked-fall-studios' ); ?>"
+                href="<?php echo esc_url( 'https://crookedfallstudios.com/dist-heaths-tire-and-lube', 'crooked-fall-studios' ); ?>"
                 target="_blank"
                 ><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a
               >
@@ -224,7 +211,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn1">
               <i class="fab fa-github-square"></i
               ><a
-                href="<?php esc_url( 'https://github.com/awduley/polyrhythm-drumming-studios', 'crooked-fall-studios' ); ?>"
+                href="<?php echo esc_url( 'https://github.com/awduley/polyrhythm-drumming-studios', 'crooked-fall-studios' ); ?>"
                 target="_blank"
                 ><?php _e( 'GitHub code', 'crooked-fall-studios' ); ?></a
               >
@@ -232,7 +219,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn2">
               <i class="fas fa-link"></i
               ><a
-                href="<?php esc_url( 'https://www.crookedfallstudios.com/dist-polyrhythm-drumming-studios/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
+                href="<?php echo esc_url( 'https://www.crookedfallstudios.com/dist-polyrhythm-drumming-studios/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
                 ><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a
               >
             </div>
@@ -274,7 +261,7 @@ get_header()
             <div class="project-section__btn project-section__btn--btn2">
               <i class="fas fa-link"></i
               ><a
-                href="<?php esc_url( 'https://www.crookedfallstudios.com/dist-mos-silver-lake-charters/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
+                href="<?php echo esc_url( 'https://www.crookedfallstudios.com/dist-mos-silver-lake-charters/index.html', 'crooked-fall-studios' ); ?>" target="_blank"
                 ><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a
               >
             </div>
@@ -301,16 +288,16 @@ get_header()
             <h3><?php _e( 'Good Advice Monster', 'crooked-fall-studios' ); ?></h3> 
             <p><?php _e( 'I made this little app with React. Although I would like to start shifting towards using functional components and hooks, I chose to use a couple class based components in this project to manage state.', 'crooked-fall-studios' ); ?>
             </p> 
-            <p><?php _e( 'The clock at the top uses state to hold the current time. It is updated every second using setInterval() and then formatted correctly with the toLocaleTimeString() method. In addition, the Advice compenent uses axios to fetch the advice results from their API. It\'s set to make the API call once with componentDidMount, and then once every minute after with a custom function.', 'crooked-fall-studios' ); ?>
+            <p><?php _e( 'The clock at the top uses state to hold the current time. It is updated every second using setInterval() and then formatted correctly with the toLocaleTimeString() method. In addition, the Advice component uses axios to fetch the advice results from their API. It\'s set to make the API call once with componentDidMount, and then once every minute after with a custom function.', 'crooked-fall-studios' ); ?>
             </p>
           </div> 
           <div class="project-section__btns"> 
             <div class="project-section__btn project-section__btn--btn1"> 
-              <i class="fab fa-github-square"></i><a href="<?php esc_url( 'https://github.com/awduley/good-advice-monster', 'crooked-fall-studios' ); ?>" 
+              <i class="fab fa-github-square"></i><a href="<?php echo esc_url( 'https://github.com/awduley/good-advice-monster', 'crooked-fall-studios' ); ?>" 
               target="_blank"><?php _e( 'GitHub code' ); ?></a> 
             </div>
             <div class="project-section__btn project-section__btn--btn2"> 
-              <i class="fas fa-link"></i><a href="<?php esc_url( 'https://crookedfallstudios.com/build-good-advice-monster', 'crooked-fall-studios' ); ?>" 
+              <i class="fas fa-link"></i><a href="<?php echo esc_url( 'https://crookedfallstudios.com/build-good-advice-monster', 'crooked-fall-studios' ); ?>" 
             target="_blank"><?php _e( 'Check it out', 'crooked-fall-studios' ); ?></a> 
             </div> 
           </div>
@@ -326,13 +313,21 @@ get_header()
 
       <!-- Credentials Section -->
       <section class="credentials">
+        <h3 class="bar section-heading credentials-heading"><?php _e( 'Certificates', 'crooked-fall-studios' ); ?></h2>
         <div class="certificates">
-          <div class="certificate certificate-1">
-            <img src="<?php echo get_template_directory_uri() . '/img/fcc-front-end-cert.jpg'; ?>" alt="Free Code Camp front end developer certificate"> 
+        <div class="certificate certificate-1">
+            <a href="<?php echo esc_url( 'https://www.udemy.com/certificate/UC-3279d9d9-e4b5-4cf6-9534-efcae5f24a4d/', 'crooked-fall-studios' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/udemy-cert-wp-theme-development-from-scratch.jpg'; ?>" alt="Udemy WordPress theme development from scratch certificate"></a>
+          </div>
+          <div class="certificate certificate-2">
+            <a href="<?php echo esc_url( 'https://www.freecodecamp.org/certification/fcc21443778-f02b-468f-9848-50b87a9f603a/responsive-web-design', 'crooked-fall-studios' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/fcc-front-end-cert.jpg'; ?>" alt="Free Code Camp front end developer certificate"></a>
+          </div>
+          <div class="certificate certificate-3">
+            <a href="<?php echo esc_url( 'https://www.udemy.com/certificate/UC-063cc418-64cb-489d-883c-0c6cc95c7680/', 'crooked-fall-studios' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/udemy-cert-git-essentials.jpg'; ?>" alt="Udemy Git Essentials certificate"></a>
           </div>
         </div>
-        <div class="resume">
-
+        <h3 class="bar section-heading resume-heading">Resume</h3>
+        <div class="certificate resume"> 
+          <a href="<?php echo esc_url( 'https://crookedfallstudios.com/wp-content/uploads/2021/06/Resume.pdf', 'crooked-fall-studios' ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/resume-1.jpg' ?>" alt="Resume for Andrew Duley"></a>
         </div>
       </section>
       <!-- credentials -->

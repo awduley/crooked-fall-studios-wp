@@ -1,9 +1,10 @@
-// Front page styles
+// Music and animation styles
 .music-primary-content {
  
 }
 
-.music__container {
+.music__container,
+.animation__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,14 +15,14 @@
   color: lighten($color-purple-1, 20);
 }
 
-.music__post {
+.music__post,
+.animation__post {
   margin: 2rem 0;
   position: relative;
   width: 90%;
   height: auto;
   @include transition-medium;
   transform: scale(1);
-
 
   &::before {
     content: '';
@@ -30,7 +31,7 @@
     right: 0;
     bottom: 1%;
     height: 5.4rem;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .7);
   }
 
   &:hover {
@@ -42,13 +43,20 @@
   
 }
 
-.music__post-title {
+.music__post-title,
+.animation__post-title {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   font-size: 2rem;
 }
+
+// Animation styles
+.animation__title {
+  color: lighten($color-blue-1, 20);
+}
+
 
 // Newest posts styles
 .newest-posts {
@@ -187,7 +195,15 @@
 }
 
 .entry-thumbnail {
-  
+
+}
+
+figcaption {
+  color: lighten($color-gray-light, 50);
+  font-style: italic;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .entry-meta { 

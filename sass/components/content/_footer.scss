@@ -14,4 +14,13 @@
 .site-info {
   text-align: center;
   color: #fff;
+
+  a {
+    color: $color-blue-4;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-blue-3;
+    }
+  }
 }

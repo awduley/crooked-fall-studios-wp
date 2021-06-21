@@ -17,7 +17,7 @@ get_header();
 		<div class="primary-content music-primary-content">
 
 			<section class="music">
-			<h2 class="music__title align-center"><?php _e( 'Music Section', 'crooked-fall-studios' ) ?></h2>
+			<h2 class="music__title align-center"><?php _e( 'Music', 'crooked-fall-studios' ) ?></h2>
 				<div class="music__container">
 
 					<?php 
@@ -149,7 +149,7 @@ get_header();
 						'posts_per_page' => '1',
 					);
 
-					$musicMyMusic = new WP_Query( $musicArgsReaper );
+					$musicMyMusic = new WP_Query( $musicArgsMyMusic );
 
 						if ( $musicMyMusic->have_posts() ) :
 							while ( $musicMyMusic->have_posts() ) :
@@ -175,6 +175,45 @@ get_header();
 
 				</div>
 			</section><!-- .music -->
+
+			<section class="animation">
+			<h2 class="animation__title align-center"><?php _e( 'Animation', 'crooked-fall-studios' ) ?></h2>
+				<div class="animation__container">
+
+					<?php 
+				
+				 	// Getting the most recent posts from the Blender category
+					$argsBlender = array(
+							'post_type' 			=> 'cfs_3d_animation',
+							'posts_per_page'	=> 4,	
+					);
+
+					$postsBlender = new WP_Query( $argsBlender );
+
+						if ( $postsBlender->have_posts() ) :
+							while ( $postsBlender->have_posts() ) :
+								$postsBlender->the_post();
+
+					?>
+
+					<div class="animation__post">
+
+						<div class="animation__img-cat">
+							<a href="<?php the_permalink(); ?>">
+								<div class="animation__img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+							</a>
+							<a href="<?php the_permalink(); ?>"><h3 class="animation__post-title align-center"><?php echo get_cat_name( '11' ); ?></h3><!-- .music__posts-title -->
+							</a>
+						</div>
+
+					</div><!-- animation__post -->
+
+					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endif; ?>
+				</div><!-- .animation-container -->
+			</section><!-- .animation -->
 
 			<section class="newest-posts block">
 				<div class="newest-posts__container">
