@@ -1499,6 +1499,20 @@ figcaption {
 	display: none;
 }
 
+.entry-content ul li {
+	color: #fff;
+}
+
+.entry-content ul li::before {
+	content: "\2022";
+	/* \2022 is the CSS Code/unicode for a bullet */
+	color: #A32FA3;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 .entry-button {
 	margin: 3rem 0;
 }
@@ -1974,6 +1988,34 @@ figcaption {
 	padding: 0 1rem;
 }
 
+.widget .menu-secondary-menu-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.widget .menu li {
+	margin: 0 auto;
+	border: none;
+	border-top: none;
+}
+
+.widget .menu li:first-child {
+	border-top: none;
+}
+
+.widget .menu li a {
+	margin: .6rem 0;
+	padding: .4rem .6rem;
+}
+
+.widget .menu li a:hover {
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border-radius: 3px;
+}
+
 .widget ul {
 	display: flex;
 	flex-direction: column;
@@ -1997,31 +2039,41 @@ figcaption {
 	color: #b1b1b1;
 }
 
-.widget_yarpp_widget h3 {
-	color: #fff;
-	text-align: center;
-}
-
-.widget_yarpp_widget .yarpp-thumbnail .yarpp-thumbnail-title {
-	text-align: center;
-}
-
 .yarpp h3 {
 	color: #fff;
 	text-align: center;
 }
 
-.yarpp-template-thumbnails {
-	padding: 1rem 0;
+.yarpp .yarpp-thumbnails-horizontal {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 1.8rem;
+	justify-items: center;
+	align-items: center;
+	margin: 2rem 0;
 }
 
-.yarpp-template-thumbnails h3 {
-	text-align: center;
-	color: #fff;
+.yarpp .yarpp-thumbnail {
+	display: block;
+	margin: 0 auto;
 }
 
-.yarpp-template-thumbnails .yarpp-thumbnail .yarpp-thumbnail-title {
+.yarpp .yarpp-thumbnail .attachment-thumbnail {
+	display: block;
+	margin: 0 auto;
+}
+
+.yarpp .yarpp-thumbnail .yarpp-thumbnail-title {
+	display: block;
+	margin: 1rem auto;
 	text-align: center;
+}
+
+.attachment-thumbnail {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	padding: 1rem;
 }
 
 .sidebar-1 {
@@ -2069,6 +2121,28 @@ figcaption {
 	padding: .8rem 0;
 }
 
+.sidebar-1 .widget .widget-title {
+	color: #0576a7;
+}
+
+.sidebar-1 .widget .widget_custom_html {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidebar-1 .widget .widget_custom_html a {
+	margin: .6rem 0;
+	padding: .4rem .6rem;
+}
+
+.sidebar-1 .widget .widget_custom_html a:hover {
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border-radius: 3px;
+}
+
 .sidebar-2-container {
 	padding: 1rem;
 	width: 100%;
@@ -2101,6 +2175,28 @@ figcaption {
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 0 1rem;
+}
+
+.sidebar-2 .widget-title {
+	color: #0576a7;
+}
+
+.sidebar-2 .custom-html-widget {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.sidebar-2 .custom-html-widget a {
+	margin: .6rem 0;
+	padding: .4rem .6rem;
+}
+
+.sidebar-2 .custom-html-widget a:hover {
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border-radius: 3px;
 }
 
 .widget_search {

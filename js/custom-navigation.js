@@ -12,3 +12,19 @@ hamburgerButton.addEventListener('click', () => {
   line3.classList.toggle('line-3-click');
   mainNavigationMobile.classList.toggle('mobile-show');
 });
+
+addEventListener('scroll', () => {
+  line1.classList.remove('line-1-click');
+  line2.classList.remove('line-2-click');
+  line3.classList.remove('line-3-click');
+  mainNavigationMobile.classList.remove('mobile-show');
+});
+
+addEventListener('resize', () => {
+  if(window.innerWidth >= 768) {
+    line1.classList.remove('line-1-click');
+    line2.classList.remove('line-2-click');
+    line3.classList.remove('line-3-click');
+    mainNavigationMobile.classList.remove('mobile-show');
+  }
+});

@@ -271,9 +271,9 @@ get_header();
 
 					<!-- 3D Animation playlist -->
 					<div class="video-playlists__playlist">
-							<a href="<?php echo esc_url( 'https://www.youtube.com/playlist?list=PLl4BqPfQ2jlplRFazF4i0Wyt2oiyHCrO5' ); ?>"><h3 class="video-playlists__playlist-title align-center">3D Animation</h3></a>
+							<a href="<?php echo esc_url( 'https://www.youtube.com/playlist?list=PLl4BqPfQ2jlrtO8j3EO39hcr2rt6czfNI' ); ?>"><h3 class="video-playlists__playlist-title align-center">3D Animation</h3></a>
 							<div class="video-playlists__playlist-video iframe">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLl4BqPfQ2jlplRFazF4i0Wyt2oiyHCrO5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLl4BqPfQ2jlrtO8j3EO39hcr2rt6czfNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div><!-- .video-playlists_playlist -->
 						</div><!-- .video-playlists__playlist -->
 

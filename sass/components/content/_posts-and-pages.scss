@@ -235,12 +235,24 @@ figcaption {
   }
 
   .updated {
-    display: none;
+    display: none; 
   }
 }
 
 .entry-content {
 
+  ul li {
+    color: #fff;
+  }
+
+  ul li::before {
+    content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
+    color: $color-purple-1;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 }
 
 .entry-button {

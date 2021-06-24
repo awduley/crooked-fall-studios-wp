@@ -88,6 +88,13 @@
       width: 34rem; 
     }
   }
+
+  // .yarpp-thumbnails-horizontal {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   justify-items: center;
+  //   align-items: center;
+  // }
 }
 
 // Tablets and small laptops
@@ -141,6 +148,10 @@
       width: 32rem;
     }
   }
+
+  // .yarpp-thumbnails-horizontal {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
 }
 
 // Desktop computers 
@@ -159,6 +170,9 @@
     margin: 3rem 0 1rem;
   }
 
+  // .yarpp-thumbnails-horizontal {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
 }
 
 // Tvs and large monitors

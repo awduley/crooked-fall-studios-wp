@@ -9,6 +9,37 @@
   max-width: 32rem;
   padding: 0 1rem;
 
+  .menu-secondary-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    
+    li {
+      margin: 0 auto;
+      border: none;
+      border-top: none;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      a {
+        margin: .6rem 0;
+        padding: .4rem .6rem;
+  
+        &:hover {
+          background: rgba(0, 0, 0, .6);
+          color: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -34,37 +65,44 @@
 }
 
 // YARPP styles
-.widget_yarpp_widget {
-
-  h3 {
-    color: #fff;
-    text-align: center;
-  }
-
-  .yarpp-thumbnail .yarpp-thumbnail-title {
-    text-align: center;
-  }
-}
-
 .yarpp { 
 
-  & h3 {
+  h3 {
     color: #fff;
     text-align: center;
+  }
+
+  .yarpp-thumbnails-horizontal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1.8rem; 
+    justify-items: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .yarpp-thumbnail {
+    display: block;
+    margin: 0 auto;
+  
+    & .attachment-thumbnail {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .yarpp-thumbnail-title {
+      display: block;
+      margin: 1rem auto;
+      text-align: center;
+    }
   }
 }
 
-.yarpp-template-thumbnails {
-  padding: 1rem 0;
-
-  h3 {
-    text-align: center;
-    color: #fff;
-  }
-
-  .yarpp-thumbnail .yarpp-thumbnail-title {
-    text-align: center;
-  }
+.attachment-thumbnail {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
 }
 
 .sidebar-1 {
@@ -109,6 +147,28 @@
         padding: .8rem 0;
       }
     }
+
+    .widget-title {
+      color: lighten($color-blue-3, 20);
+    }
+  
+    .widget_custom_html {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+
+      a {
+        margin: .6rem 0;
+        padding: .4rem .6rem;
+  
+        &:hover {
+          background: rgba(0, 0, 0, .6);
+          color: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
   }
 }
 
@@ -145,6 +205,28 @@
       padding: 0 1rem; 
     }
   } 
+
+  .widget-title {
+    color: lighten($color-blue-3, 20);
+  }
+
+  .custom-html-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    a {
+      margin: .6rem 0;
+      padding: .4rem .6rem;
+
+      &:hover {
+        background: rgba(0, 0, 0, .6);
+        color: #fff;
+        border-radius: 3px;
+      }
+    }
+  }
 }
 
 // Search form styles 
